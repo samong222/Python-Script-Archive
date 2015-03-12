@@ -1,2 +1,5 @@
 print ("hello world")
+num1 = 1
+num2 = 2
+
 raw_input ("hit enter to exit")
