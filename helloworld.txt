@@ -2,4 +2,27 @@ print ("hello world")
 num1 = 1
 num2 = 2
 
+#comments
+"""
+multiple line comments
+"""
+
+total = 100 + 100
+total = num1 + num2
+# +, -, *, /
+total = 10 ** 2
+# the "**" acts as exponential
+total = 3 % 2
+# the "%" acts as modulo
+
+temp_string = 'This also works'
+temp_string = "hello world \' HI!! \'."
+c = "cats"[0] 				#c = c
+n = "Ryan"[3] 				#n = n
+len(temp_string)			#returns length of string
+temp_string.lower()			#lower case
+temp_string.upper()			#upper case
+str(111)					#turns the int '111' to a string
+
 raw_input ("hit enter to exit")
+
