@@ -7,6 +7,7 @@ num2 = 2
 multiple line comments
 """
 
+#arithmetic is evaluated from left to right
 total = 100 + 100
 total = num1 + num2
 # +, -, *, /
@@ -24,5 +25,59 @@ temp_string.lower()			#lower case
 temp_string.upper()			#upper case
 str(111)					#turns the int '111' to a string
 
+from datetime import datetime
+now = datetime.now()
+print '%s/%s/%s' % (now.month, now.day, now.year)
+print '%s:%s:%s' % (now.hour, now.minute, now.second)
+
+#Boolean operators are evaluated in order of ('not', then 'and', then 'or')
+if ()):
+    print "This really is true."
+elif ():
+    print "That is true."
+else:
+    print "None of the above."
+
+###########################
+### piglatin translator ###
+###########################
+pyg = 'ay'
+original = raw_input('Enter a word:')
+word = original.lower()
+first = word[0]
+
+if len(original) > 0 and original.isalpha():
+	# isalpha checks that the string only containg chars
+    print "Original: " + original
+else:
+    print 'empty'
+    
+new_word = word[1:len(word)] + first + pyg
+print "Translated: " + new_word
+
+###########################
+### creating functions  ###
+###########################
+def cube(number):
+    return number**3
+    
+def by_three(number):
+    if(number % 3 == 0):
+        return cube (number)
+    else:
+        return False
+
+###########################
+### importing module    ###
+###########################
+import math            	# Imports the math module
+everything = dir(math) 	# Sets everything to a list of things from math
+print everything       	# Prints 'em all!
+print math.sqrt(25)		# Uses a square root function in the math module
+	
+		
+		
+		
+		
 raw_input ("hit enter to exit")
 

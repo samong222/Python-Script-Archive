@@ -1,0 +1,15 @@
+cd
+dir
+ls
+pwd
+
+
+git add .		#updates changes and new files
+git add -u		#updates changes and deletes files
+git add -A		#does both add functions "." and "-u"
+
+git commit -m "comment message"		#commits the changes and adds a comment on what was added
+
+git push		#pushed the files that was commited up
+git pull		#pulls the files down into the local directory
+
