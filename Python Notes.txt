@@ -41,13 +41,14 @@ else:
 ###########################
 ### piglatin translator ###
 ###########################
+//--- example of string manipulation
 pyg = 'ay'
 original = raw_input('Enter a word:')
 word = original.lower()
 first = word[0]
 
 if len(original) > 0 and original.isalpha():
-	# isalpha checks that the string only containg chars
+	# isalpha checks that the string only containing chars
     print "Original: " + original
 else:
     print 'empty'
@@ -75,9 +76,57 @@ everything = dir(math) 	# Sets everything to a list of things from math
 print everything       	# Prints 'em all!
 print math.sqrt(25)		# Uses a square root function in the math module
 	
-		
-		
-		
-		
+
+###########################
+### checking type    ###
+###########################
+def distance_from_zero(num):
+if(type(num)==int or type(num)==float):		#check type of var
+	return abs(num)
+else:
+	return "Nope"
+
+
+###########################
+### List 				###
+###########################
+zoo_animals = []
+zoo_animals = ["Tiger", "Snake", "Panda", "Dragon"]
+zoo_animals.append("Wolf")
+list_length = len(zoo_animals)
+print "There are %d items in the Zoo." % (list_length)
+print zoo_animals
+
+//strings are also like lists and you can slice them also
+animal = "catdogfrog"
+cat  = animals[:3]		# The first three characters of animals
+dog  = animals[3:6]		# The fourth through sixth characters
+frog = animals[6:]		# From the seventh character to the end
+
+//insert string into the list
+temp_index = zoo_animals.index("Dragon")
+zoo_animals.insert(temp_index, "Cobra")
+
+//--- example of a sort and for loop
+start_list = [5, 3, 1, 2, 4]
+square_list = []
+
+for number in start_list:
+    square_list.append(number ** 2)
+    
+square_list.sort()
+print square_list
+
+
+###########################
+### Dictionaries  		###
+###########################
+menu = {}
+menu["Pizza"] = 10.00
+menu["Steak"] = 12.50
+menu["Soda"] = 3.50
+
+
+	
 raw_input ("hit enter to exit")
 
